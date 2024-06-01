@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde voce é?</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    País onde você mora: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function calcular(){
+            var txtpais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var pais = txtpais.value
+            res.innerHTML = `<p>Você mora em <strong>${pais}</strong>!</p>`
+            if (pais == 'Brasil'){
+                res.innerHTML += '<p>Você é <strong>brasileiro</strong>!</p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>estrangeiro</strong>!</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>

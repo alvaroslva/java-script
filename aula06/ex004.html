@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body { font: normal 20pt Arial; }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+
+        /* 
+        Números depois da vírgula
+        n1 = 1545.5
+        n1.toFixed(2)
+        '1545.50'
+
+        Deixar o número em dinheiro
+        n1.toLocaleString('pt-br, {style: 'currency', currency? 'BRL'}')
+        n1.toLocaleString('pt-br, {style: 'currency', currency? 'USD'}')
+        n1.toLocaleString('pt-br, {style: 'currency', currency? 'EUR'}')
+        
+        */
+
+    </script>
+</body>
+</html>
